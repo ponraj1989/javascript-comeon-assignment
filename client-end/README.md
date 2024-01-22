@@ -1,7 +1,5 @@
 # React-Gaming-App
 
-![comeon-javascript-test-site](example.png)
-
 This repository contains solution for comeon javascript assignment 
 
 ## Assignment Overview
@@ -19,22 +17,36 @@ The following tasks are part of the assignment:
 * Listed categories with filter option.
 * Search by text function. 
 * Click and play the game.
-* Logout option and navigate to login screen
+* Logout option and navigate to login screen 
 
-### Server end Setup mock api
-```javascript
-npm install -g json-server
+## To Setup the project up and running
+
+# Pre-requisites
+
+ - Install [Node.js](https://nodejs.org/en/) Node js 16 +
+
+# Getting started
+
+- clone the repository
+- Install dependencies - creates node_modules and package-lock.json
 ```
-
-```javascript
-json-server --watch mock/mock-data.json --port 3001 --middlewares mock/mock-api.js
-```
-
-Update: Use json-server version other than latest or alpha for example 0.17.3 or lower.
-
-### Client end Setup
-
-clone the repo and install dependencies
-```javascript
 npm install
+``` 
+- Build and run the project  
+
 ```
+npm start
+```
+Navigate to `http://localhost:8080` 
+  
+```
+
+### Running tests using NPM Scripts
+````
+npm run test
+````
+
+### Running code coverage using NPM Scripts
+````
+npm run test:coverage
+````
